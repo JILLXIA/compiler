@@ -1,0 +1,186 @@
+Species : {code : 3 }  {value : while }
+Species : {code : 12 }  {value : ( }
+Species : {code : 1 }  {value : x }
+Species : {code : 17 }  {value : == }
+Species : {code : 23 }  {value : 0 }
+Species : {code : 11 }  {value : && }
+Species : {code : 1 }  {value : y }
+Species : {code : 17 }  {value : == }
+Species : {code : 23 }  {value : 1 }
+Species : {code : 13 }  {value : ) }
+Species : {code : 14 }  {value : { }
+Species : {code : 2 }  {value : if }
+Species : {code : 12 }  {value : ( }
+Species : {code : 1 }  {value : y }
+Species : {code : 17 }  {value : == }
+Species : {code : 23 }  {value : 3 }
+Species : {code : 11 }  {value : && }
+Species : {code : 12 }  {value : ( }
+Species : {code : 1 }  {value : y }
+Species : {code : 17 }  {value : == }
+Species : {code : 23 }  {value : 3 }
+Species : {code : 11 }  {value : && }
+Species : {code : 1 }  {value : y }
+Species : {code : 4 }  {value : + }
+Species : {code : 23 }  {value : 2 }
+Species : {code : 17 }  {value : == }
+Species : {code : 23 }  {value : 14 }
+Species : {code : 13 }  {value : ) }
+Species : {code : 13 }  {value : ) }
+Species : {code : 14 }  {value : { }
+Species : {code : 1 }  {value : x }
+Species : {code : 9 }  {value : = }
+Species : {code : 1 }  {value : x }
+Species : {code : 4 }  {value : + }
+Species : {code : 23 }  {value : 2 }
+Species : {code : 6 }  {value : * }
+Species : {code : 1 }  {value : y }
+Species : {code : 8 }  {value : ; }
+Species : {code : 1 }  {value : x }
+Species : {code : 9 }  {value : = }
+Species : {code : 1 }  {value : y }
+Species : {code : 8 }  {value : ; }
+Species : {code : 15 }  {value : } }
+Species : {code : 16 }  {value : else }
+Species : {code : 14 }  {value : { }
+Species : {code : 1 }  {value : y }
+Species : {code : 9 }  {value : = }
+Species : {code : 1 }  {value : y }
+Species : {code : 4 }  {value : + }
+Species : {code : 23 }  {value : 2 }
+Species : {code : 6 }  {value : * }
+Species : {code : 12 }  {value : ( }
+Species : {code : 1 }  {value : x }
+Species : {code : 4 }  {value : + }
+Species : {code : 23 }  {value : 4 }
+Species : {code : 13 }  {value : ) }
+Species : {code : 8 }  {value : ; }
+Species : {code : 15 }  {value : } }
+Species : {code : 15 }  {value : } }
+Species : {code : 24 }  {value : $r }
+-----------------------------------------------------
+S→while(C){S}S
+C→D C'
+D→G CMP G
+G→id
+CMP → ==
+G→number
+C'→&&DC'
+D→G CMP G
+G→id
+CMP → ==
+G→number
+C'→ε
+S→if(C){S}else{S}S
+C→D C'
+D→G CMP G
+G→id
+CMP → ==
+G→number
+C'→&&DC'
+D→(C)
+C→D C'
+D→G CMP G
+G→id
+CMP → ==
+G→number
+C'→&&DC'
+D→G CMP G
+G→id
+Species : {code : 3 }  {value : while }
+Species : {code : 12 }  {value : ( }
+Species : {code : 1 }  {value : x }
+Species : {code : 17 }  {value : == }
+Species : {code : 23 }  {value : 0 }
+Species : {code : 11 }  {value : && }
+Species : {code : 1 }  {value : y }
+Species : {code : 17 }  {value : == }
+Species : {code : 23 }  {value : 1 }
+Species : {code : 13 }  {value : ) }
+Species : {code : 14 }  {value : { }
+Species : {code : 1 }  {value : a }
+Species : {code : 17 }  {value : == }
+Species : {code : 1 }  {value : b }
+Species : {code : 8 }  {value : ; }
+Species : {code : 1 }  {value : c }
+Species : {code : 9 }  {value : = }
+Species : {code : 23 }  {value : 1 }
+Species : {code : 8 }  {value : ; }
+Species : {code : 15 }  {value : } }
+Species : {code : 24 }  {value : $r }
+-----------------------------------------------------
+S→while(C){S}S
+C→D C'
+D→G CMP G
+G→id
+CMP → ==
+G→number
+C'→&&DC'
+D→G CMP G
+G→id
+CMP → ==
+G→number
+C'→ε
+S→id=E;S
+Species : {code : 2 }  {value : if }
+Species : {code : 12 }  {value : ( }
+Species : {code : 1 }  {value : a }
+Species : {code : 17 }  {value : == }
+Species : {code : 23 }  {value : 0 }
+Species : {code : 13 }  {value : ) }
+Species : {code : 14 }  {value : { }
+Species : {code : 1 }  {value : x }
+Species : {code : 9 }  {value : = }
+Species : {code : 1 }  {value : x }
+Species : {code : 4 }  {value : + }
+Species : {code : 23 }  {value : 1 }
+Species : {code : 8 }  {value : ; }
+Species : {code : 15 }  {value : } }
+Species : {code : 24 }  {value : $r }
+-----------------------------------------------------
+S→if(C){S}else{S}S
+C→D C'
+D→G CMP G
+G→id
+CMP → ==
+G→number
+C'→ε
+S→id=E;S
+E→T E'
+T→F T'
+F→id
+T→F T'
+Species : {code : 2 }  {value : if }
+Species : {code : 12 }  {value : ( }
+Species : {code : 1 }  {value : a }
+Species : {code : 17 }  {value : == }
+Species : {code : 23 }  {value : 0 }
+Species : {code : 13 }  {value : ) }
+Species : {code : 14 }  {value : { }
+Species : {code : 1 }  {value : x }
+Species : {code : 9 }  {value : = }
+Species : {code : 1 }  {value : x }
+Species : {code : 4 }  {value : + }
+Species : {code : 23 }  {value : 1 }
+Species : {code : 8 }  {value : ; }
+Species : {code : 1 }  {value : y }
+Species : {code : 9 }  {value : = }
+Species : {code : 1 }  {value : y }
+Species : {code : 5 }  {value : - }
+Species : {code : 23 }  {value : 3 }
+Species : {code : 8 }  {value : ; }
+Species : {code : 15 }  {value : } }
+Species : {code : 24 }  {value : $r }
+-----------------------------------------------------
+S→if(C){S}else{S}S
+C→D C'
+D→G CMP G
+G→id
+CMP → ==
+G→number
+C'→ε
+S→id=E;S
+E→T E'
+T→F T'
+F→id
+T→F T'
